@@ -10,8 +10,8 @@
 -author("jaggernaute").
 
 %% API
--import(great,[hello/0]).
+-import(great,[hello/1]).
 -export([start/0]).
 
 start() ->
-  hello().
+  hello("World").

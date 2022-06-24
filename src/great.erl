@@ -11,10 +11,10 @@
 
 %% API
 -import(io,[fwrite/1]).
--export([hello/0]).
+-export([hello/1]).
 
 say(Name) ->
   fwrite("Hello, " ++ Name ++ "!\n").
 
-hello() ->
-  say("Sigma").
+hello(Name) ->
+  say(Name).
